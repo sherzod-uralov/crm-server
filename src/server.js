@@ -16,7 +16,7 @@ function serverRunner() {
         app.use(editMiddleware,editRouter)
         app.use(editPostRouter)
         app.use(payRouter)
-        app.listen(process.env.PORT,'192.168.100.116');
+        app.listen(process.env.PORT, () => console.log('server running on port:'));
     } catch (error) {
         console.log(error);
     }
